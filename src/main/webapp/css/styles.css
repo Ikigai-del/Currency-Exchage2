@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* чтобы контейнер был сверху, а не по центру */
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* для адаптивности */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.curList, .addForm, .exList, .changeForm {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    flex: 1;
+    min-width: 350px;
+}
+
+.curList, .exList {
+    margin-right: 0; /* убрал, т.к. gap уже задаёт отступы */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #4facfe;
+    color: white;
+}
+
+tr:hover {
+    background: #f1faff;
+}
+
+.centered {
+    text-align: center;
+    vertical-align: middle;
+}
+
+input, button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input[type="submit"], button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover, button:hover {
+    background: #00c6fb;
+    transform: scale(1.05);
+}
+.addCurrency {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.addCurrency h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.addCurrency input {
+    margin: 5px 0;
+    padding: 5px;
+}
+.btn {
+    background: #3498db;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #2980b9;
+}
